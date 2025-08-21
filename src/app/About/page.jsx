@@ -24,7 +24,7 @@ const processSteps = [
   },
   {
     title: "Deliver",
-    image: "/deliver.jpg",
+    image: "/delivery.jpg",
     description:
       "We ensure timely delivery with quality assurance and ongoing support. At DreamSkyTech, client satisfaction is our ultimate goal.",
   },
@@ -82,7 +82,7 @@ export default function AboutPage() {
           {/* Left Image */}
           <div className="relative w-full h-[400px] md:h-[500px]">
             <Image
-              src="/about.jpg"
+              src="/work.jpg"
               alt="About Us"
               fill
               className="object-cover rounded-3xl"
@@ -235,7 +235,7 @@ export default function AboutPage() {
 
                 <button
                   type="submit"
-                  className="w-full bg-[#000080] text-white font-semibold py-3 rounded-md hover:opacity-90 transition"
+                  className="w-full bg-gradient-to-r from-blue-500 to-blue-700 text-white font-semibold py-3 rounded-md hover:opacity-90 transition"
                 >
                   Submit Now
                 </button>
