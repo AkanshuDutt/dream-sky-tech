@@ -11,7 +11,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-r from-blue-800 to-blue-700 text-gray-300">
+    <footer className="bg-[#000080] text-gray-300">
       <div className="max-w-7xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-4 gap-8">
         {/* Company Info */}
         <div>
@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
 
       {/* Bottom Copyright */}
       <div className="border-t border-b-blue-200 mt-10">
-        <div className="flex justify-center items-center h-24 text-white text-sm">
+        <div className="flex justify-center items-center h-13 text-white text-sm">
           &copy; Copyright dreamskytech {new Date().getFullYear()}. All rights reserved.
         </div>
       </div>

@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Footer from "@/components/Footer";
+import  Header from "@/components/Header";
 
 const processSteps = [
   {
@@ -24,7 +26,7 @@ const processSteps = [
   },
   {
     title: "Deliver",
-    image: "/delivery.jpg",
+    image: "/deliver.jpg",
     description:
       "We ensure timely delivery with quality assurance and ongoing support. At DreamSkyTech, client satisfaction is our ultimate goal.",
   },
@@ -75,6 +77,9 @@ export default function AboutPage() {
   };
 
   return (
+    <>
+    <Header/>
+    
     <div className="bg-white font-sans">
       {/* About Section */}
       <section className="px-6 md:px-20 py-20">
@@ -82,7 +87,7 @@ export default function AboutPage() {
           {/* Left Image */}
           <div className="relative w-full h-[400px] md:h-[500px]">
             <Image
-              src="/work.jpg"
+              src="/about.jpg"
               alt="About Us"
               fill
               className="object-cover rounded-3xl"
@@ -116,8 +121,8 @@ export default function AboutPage() {
       </section>
 
       {/* Working Process Section */}
-      <section className="py-20 px-6 md:px-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
+      <section className="py-16  px-6 md:px-20 mt-1">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 ">
           Our Working Process
         </h2>
 
@@ -160,13 +165,16 @@ export default function AboutPage() {
           ))}
         </div>
 
-        {/* Free Consultation Section */}
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
-          Request A Free Consultation
-        </h2>
+<h2 className="text-2xl md:text-3xl font-bold text-center mb-6">
+  Request A Free Consultation
+</h2>
 
-        <div className="bg-[#000080] py-19 px-16">
-          <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center bg-white/90 shadow-lg rounded-lg overflow-hidden">
+<div className="bg-[#000080] py-19 px-16 mb-16"> 
+  {/* 👆 mb-16 add kiya taki footer se gap aa jaye */}
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center bg-white/90 shadow-lg rounded-lg overflow-hidden">
+
+        {/* <div className="bg-[#000080] py-19 px-16"> */}
+          {/* <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center bg-white/90 shadow-lg rounded-lg overflow-hidden"> */}
             {/* Left Side Image */}
             <div className="relative w-full h-[400px] md:h-[500px]">
               <Image
@@ -245,5 +253,7 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
+    <Footer/>
+    </>
   );
 }
