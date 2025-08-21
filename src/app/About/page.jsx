@@ -2,6 +2,8 @@
 import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Header from "../../components/Header"
+import Footer from "../../components/Footer"
 
 const processSteps = [
   {
@@ -75,6 +77,8 @@ export default function AboutPage() {
   };
 
   return (
+    <>
+    <Header/>
     <div className="bg-white font-sans">
       {/* About Section */}
       <section className="px-6 md:px-20 py-20">
@@ -82,8 +86,8 @@ export default function AboutPage() {
           {/* Left Image */}
           <div className="relative w-full h-[400px] md:h-[500px]">
             <Image
-              src="/work.jpg"
-              alt="About Us"
+              src="/about.jpg"
+              alt="About Ussss"
               fill
               className="object-cover rounded-3xl"
             />
@@ -245,5 +249,7 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
+    <Footer/>
+    </>
   );
 }
