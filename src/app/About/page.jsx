@@ -26,7 +26,7 @@ const processSteps = [
   },
   {
     title: "Deliver",
-    image: "/delivery.jpg",
+    image: "/deliver.jpg",
     description:
       "We ensure timely delivery with quality assurance and ongoing support. At DreamSkyTech, client satisfaction is our ultimate goal.",
   },
