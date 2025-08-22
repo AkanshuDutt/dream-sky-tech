@@ -1,8 +1,12 @@
 "use client";
 import React from "react";
 
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 const PrivacyPolicy = () => {
   return (
+    <>
+    <Header/>
     <div className="bg-gray-50 min-h-screen py-12 px-6 md:px-20 text-gray-800">
       <div className="max-w-4xl mx-auto bg-white shadow-lg rounded-2xl p-8">
         {/* Heading */}
@@ -73,11 +77,14 @@ const PrivacyPolicy = () => {
         <p>📞 Phone: 8750610304</p>
 
         {/* Footer */}
-        <p className="mt-6 text-sm  text-[#000080]  text-center">
+        {/* <p className="mt-6 text-sm  text-[#000080]  text-center">
           © {new Date().getFullYear()} DreamSkyTech. All Rights Reserved.
-        </p>
+        </p> */}
       </div>
     </div>
+    
+    <Footer/>
+    </>
   );
 };
 
