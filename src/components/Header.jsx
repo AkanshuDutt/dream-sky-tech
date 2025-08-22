@@ -52,7 +52,7 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <nav className="hidden md:flex gap-6 font-medium">
-            <Link href="/" className="hover:text-gray-200">Home</Link>
+            <Link href="/home" className="hover:text-gray-200">Home</Link>
             <Link href="/about" className="hover:text-gray-200">About</Link>
 
             {/* Services Dropdown */}
@@ -66,15 +66,18 @@ const Header = () => {
 
               {isServicesOpen && (
                 <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg p-2 transition-all duration-300">
-                  <Link href="/Web" className="block px-4 py-2 hover:bg-blue-100 rounded">Web Development</Link>
+                  {/* <Link href="/Web" className="block px-4 py-2 hover:bg-blue-100 rounded">Web Development</Link> */}
                   <Link href="/Service" className="block px-4 py-2 hover:bg-blue-100 rounded">Software Development</Link>
+                 
                   <Link href="/Analytical" className="block px-4 py-2 hover:bg-blue-100 rounded">Analytics Solutions</Link>
-                  {/* <Link href="/services/solutions" className="block px-4 py-2 hover:bg-blue-100 rounded">IT Solutions</Link> */}
+                   <Link href="/Web" className="block px-4 py-2 hover:bg-blue-100 rounded">Web Development</Link>
+                  <Link href="/It" className="block px-4 py-2 hover:bg-blue-100 rounded">IT Solutions</Link> 
+                   <Link href="/Cyber" className="block px-4 py-2 hover:bg-blue-100 rounded">Cyber Security</Link>
                 </div>
               )}
             </div>
 
-            <Link href="/contact" className="hover:text-gray-200">Contact</Link>
+            <Link href="/Contact" className="hover:text-gray-200">Contact</Link>
           </nav>
 
           {/* Mobile Button */}

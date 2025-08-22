@@ -27,33 +27,42 @@ export default function Home() {
               cutting-edge digital products tailored to your unique goals.
             </p>
 
-            <button className="mt-6 px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
-              Contact Us
-            </button>
+            <a href="/contact">
+              <button className="mt-6 px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-transform duration-300 hover:scale-105 shadow-md">
+                Contact Us
+              </button>
+            </a>
 
             {/* Features */}
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
-              <div className="p-4 rounded-lg bg-gray-50 shadow-sm text-center">
-                <span className="block text-blue-600 font-bold text-2xl">👨‍💻</span>
-                <h4 className="mt-2 font-semibold">Expert Team</h4>
-                <p className="text-sm text-gray-500">
-                  Skilled professionals delivering top-notch solutions.
-                </p>
-              </div>
-              <div className="p-4 rounded-lg bg-gray-50 shadow-sm text-center">
-                <span className="block text-blue-600 font-bold text-2xl">🚀</span>
-                <h4 className="mt-2 font-semibold">Fast Execution</h4>
-                <p className="text-sm text-gray-500">
-                  Agile and adaptive workflows for faster delivery.
-                </p>
-              </div>
-              <div className="p-4 rounded-lg bg-gray-50 shadow-sm text-center">
-                <span className="block text-blue-600 font-bold text-2xl">💡</span>
-                <h4 className="mt-2 font-semibold">Innovative Ideas</h4>
-                <p className="text-sm text-gray-500">
-                  Creative solutions that transform businesses digitally.
-                </p>
-              </div>
+            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: "👨‍💻",
+                  title: "Expert Team",
+                  desc: "Skilled professionals delivering top-notch solutions.",
+                },
+                {
+                  icon: "🚀",
+                  title: "Fast Execution",
+                  desc: "Agile and adaptive workflows for faster delivery.",
+                },
+                {
+                  icon: "💡",
+                  title: "Innovative Ideas",
+                  desc: "Creative solutions that transform businesses digitally.",
+                },
+              ].map((feature, i) => (
+                <div
+                  key={i}
+                  className="p-6 rounded-2xl bg-gray-50 shadow-md text-center transform transition duration-300 cursor-default hover:shadow-2xl hover:-translate-y-2 hover:bg-white"
+                >
+                  <span className="block text-blue-600 font-bold text-4xl cursor-default transition-transform duration-300 hover:scale-125">
+                    {feature.icon}
+                  </span>
+                  <h4 className="mt-3 font-semibold text-lg">{feature.title}</h4>
+                  <p className="text-sm text-gray-500 mt-2">{feature.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -85,42 +94,26 @@ export default function Home() {
 
             {/* Technologies Grid */}
             <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-              <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-                <h4 className="font-semibold text-lg text-blue-600">
-                  Frontend Development
-                </h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  React, Next.js, Angular, Vue.js for building interactive and
-                  responsive user interfaces.
-                </p>
-              </div>
-              <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-                <h4 className="font-semibold text-lg text-blue-600">
-                  Backend Development
-                </h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  Node.js, Express.js, Python, Java – powering scalable APIs and
-                  server-side logic.
-                </p>
-              </div>
-              <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-                <h4 className="font-semibold text-lg text-blue-600">
-                  Databases
-                </h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  MySQL, PostgreSQL, MongoDB, Firebase – secure and efficient
-                  data management.
-                </p>
-              </div>
-              <div className="p-6 bg-gray-50 rounded-xl shadow hover:shadow-md transition">
-                <h4 className="font-semibold text-lg text-blue-600">
-                  Cloud & DevOps
-                </h4>
-                <p className="text-sm text-gray-600 mt-2">
-                  AWS, Azure, Docker, CI/CD – ensuring smooth deployment and
-                  reliable infrastructure.
-                </p>
-              </div>
+              {[
+                {
+                  title: "Databases",
+                  desc: "MySQL, PostgreSQL, MongoDB, Firebase – secure and efficient data management.",
+                },
+                {
+                  title: "Cloud & DevOps",
+                  desc: "AWS, Azure, Docker, CI/CD – ensuring smooth deployment and reliable infrastructure.",
+                },
+              ].map((tech, i) => (
+                <div
+                  key={i}
+                  className="p-6 bg-gray-50 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-2 duration-300"
+                >
+                  <h4 className="font-semibold text-lg text-blue-600">
+                    {tech.title}
+                  </h4>
+                  <p className="text-sm text-gray-600 mt-2">{tech.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -156,42 +149,25 @@ export default function Home() {
 
               {/* Progress Bars */}
               <div className="mt-8 space-y-6">
-                <div>
-                  <div className="flex justify-between text-sm mb-1">
-                    <span>Software Development</span>
-                    <span>95%</span>
+                {[
+                  { name: "Software Development", percent: 95 },
+                  { name: "Web Development", percent: 88 },
+                  { name: "SEO & Digital Marketing", percent: 82 },
+                  { name: "Cyber Security", percent: 76 },
+                ].map((skill, i) => (
+                  <div key={i}>
+                    <div className="flex justify-between text-sm mb-1">
+                      <span>{skill.name}</span>
+                      <span>{skill.percent}%</span>
+                    </div>
+                    <div className="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+                      <div
+                        className="bg-blue-600 h-2 rounded-full transition-all duration-1000 ease-out"
+                        style={{ width: `${skill.percent}%` }}
+                      ></div>
+                    </div>
                   </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
-                    <div className="bg-blue-600 h-2 rounded-full w-[95%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between text-sm mb-1">
-                    <span>Web Development</span>
-                    <span>88%</span>
-                  </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
-                    <div className="bg-blue-600 h-2 rounded-full w-[88%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between text-sm mb-1">
-                    <span>SEO & Digital Marketing</span>
-                    <span>82%</span>
-                  </div>
-                  <div className="w-100 bg-gray-200 rounded-full  h-2">
-                    <div className="bg-blue-600 h-2 rounded-full w-[82%]"></div>
-                  </div>
-                </div>
-                <div>
-                  <div className="flex justify-between text-sm mb-1">
-                    <span>Cyber Security</span>
-                    <span>76%</span>
-                  </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
-                    <div className="bg-blue-600 h-2 rounded-full w-[76%]"></div>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>

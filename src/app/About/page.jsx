@@ -99,23 +99,44 @@ export default function AboutPage() {
             <span className="inline-block px-4 py-1 text-sm bg-blue-100 text-blue-600 font-medium rounded-full mb-4">
               ABOUT US
             </span>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
+            {/* <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
               Helping Businesses Grow With Modern Technology
             </h2>
             <p className="text-gray-700 mb-4">
               With over <b>2 years</b> of experience in IT services, we build
               powerful software applications and mobile solutions tailored for
               businesses worldwide.
-            </p>
+            </p> */}
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 leading-snug mb-6">
+  Driving Innovation and Growth with Modern Technology
+</h2>
+<p className="text-gray-700 mb-4">
+  At <b>DreamSkyTech</b>, we empower businesses by delivering cutting-edge 
+  digital solutions designed to accelerate growth and efficiency. Our team 
+  specializes in crafting scalable web applications, mobile solutions, 
+  cloud-based platforms, and data-driven systems that meet the unique needs 
+  of each client. 
+</p>
+<p className="text-gray-700 mb-4">
+  From startups to enterprises, we partner with organizations to simplify 
+  complex challenges through innovative technology. By blending creativity, 
+  strategy, and technical expertise, <b>DreamSkyTech</b> ensures businesses 
+  stay ahead in today’s competitive digital landscape. 
+</p>
+<p className="text-gray-700">
+  Our commitment is simple — to deliver reliable, future-ready IT solutions 
+  that transform ideas into powerful business outcomes.
+</p>
+
             <p className="text-gray-600">
               Our team focuses on delivering innovative, scalable, and secure
               digital solutions that help organizations improve efficiency,
               connect better with their customers, and stay ahead in the
               competitive market.
             </p>
-            <button className="inline-block px-4 py-1 text-sm bg-blue-100 mt-10 text-blue-600 font-medium rounded-full mb-4">
+            {/* <button className="inline-block px-4 py-1 text-sm bg-blue-100 mt-10 text-blue-600 font-medium rounded-full mb-4">
               Learn More
-            </button>
+            </button> */}
           </div>
         </div>
       </section>
@@ -169,21 +190,31 @@ export default function AboutPage() {
   Request A Free Consultation
 </h2>
 
-<div className="bg-[#000080] py-19 px-16 mb-16"> 
+<div className="bg-[#000080] py-19 px-19 mb-16"> 
   {/* 👆 mb-16 add kiya taki footer se gap aa jaye */}
-  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center bg-white/90 shadow-lg rounded-lg overflow-hidden">
+  <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center bg-white shadow-lg rounded-lg overflow-hidden">
 
         {/* <div className="bg-[#000080] py-19 px-16"> */}
           {/* <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center bg-white/90 shadow-lg rounded-lg overflow-hidden"> */}
             {/* Left Side Image */}
-            <div className="relative w-full h-[400px] md:h-[500px]">
+            {/* <div className="relative w-full md:h-[500px]">
               <Image
                 src="/call.jpg"
                 alt="Consultation"
                 fill
                 className="object-cover rounded-l-lg"
               />
-            </div>
+            </div> */}
+{/* Left Side Image */}
+<Image
+  src="/call.jpg"
+  alt="Consultation"
+  width={600}
+  height={500}
+  className="rounded-l-lg"
+/>
+
+{/*  */}
 
             {/* Right Side Form */}
             <div className="bg-[#f8fbff] p-8 md:p-12">

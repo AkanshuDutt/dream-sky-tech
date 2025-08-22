@@ -26,34 +26,65 @@ export default function AnalyticsSolutions() {
               dashboards, and AI-driven reporting that improve decision-making, 
               efficiency, and growth. 
             </p>
-
+<a href="/contact">
             <button className="mt-6 px-6 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition">
-              Get a Demo
+              Contact Us
             </button>
-
+</a>
             {/* Features */}
-            <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
+            {/* <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="p-4 rounded-lg bg-gray-50 shadow-sm text-center">
-                <span className="block text-blue-600 font-bold text-2xl">📊</span>
+                <span className="block text-blue-600 font-bold text-4xl">📊</span>
                 <h4 className="mt-2 font-semibold">Data Visualization</h4>
                 <p className="text-sm text-gray-500">
                   Interactive dashboards & reports for real-time decisions.
                 </p>
               </div>
               <div className="p-4 rounded-lg bg-gray-50 shadow-sm text-center">
-                <span className="block text-blue-600 font-bold text-2xl">🤖</span>
+                <span className="block text-blue-600 font-bold text-4xl">🤖</span>
                 <h4 className="mt-2 font-semibold">AI & Predictive Models</h4>
                 <p className="text-sm text-gray-500">
                   Forecast trends with advanced machine learning insights.
                 </p>
               </div>
               <div className="p-4 rounded-lg bg-gray-50 shadow-sm text-center">
-                <span className="block text-blue-600 font-bold text-2xl">🔒</span>
+                <span className="block text-blue-600 font-bold text-4xl">🔒</span>
                 <h4 className="mt-2 font-semibold">Secure Data</h4>
                 <p className="text-sm text-gray-500">
                   End-to-end security for data-driven solutions.
                 </p>
               </div>
+            </div>
+          </div> */}
+ <div className="mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6">
+              {[
+                {
+                  icon: "📊",
+                  title: "Data Visualization",
+                  desc: " Interactive dashboards & reports for real-time decisions.",
+                },
+                {
+                  icon: "🤖",
+                  title: "AI & Predictive Models",
+                  desc: "Forecast trends with advanced machine learning insights.",
+                },
+                {
+                  icon: "🔒",
+                  title: "Secure Data",
+                  desc: "End-to-end security for data-driven solutions.",
+                },
+              ].map((feature, i) => (
+                <div
+                  key={i}
+                  className="p-6 rounded-2xl bg-gray-50 shadow-md text-center transform transition duration-300 cursor-default hover:shadow-2xl hover:-translate-y-2 hover:bg-white"
+                >
+                  <span className="block text-blue-600 font-bold text-4xl cursor-default transition-transform duration-300 hover:scale-125">
+                    {feature.icon}
+                  </span>
+                  <h4 className="mt-3 font-semibold text-lg">{feature.title}</h4>
+                  <p className="text-sm text-gray-500 mt-2">{feature.desc}</p>
+                </div>
+              ))}
             </div>
           </div>
 
@@ -73,9 +104,7 @@ export default function AnalyticsSolutions() {
         {/* Section 2: Our Analytics Stack */}
         <section className="bg-white py-20">
           <div className="max-w-7xl mx-auto px-6 text-center">
-            <p className="uppercase text-sm text-blue-600 font-semibold">
-              Our Expertise
-            </p>
+            {/*  */}
             <h2 className="text-3xl md:text-4xl font-bold mt-3">
               Analytics Technologies We Use
             </h2>
@@ -148,7 +177,7 @@ export default function AnalyticsSolutions() {
                     <span>Business Intelligence</span>
                     <span>95%</span>
                   </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full w-[95%]"></div>
                   </div>
                 </div>
@@ -157,7 +186,7 @@ export default function AnalyticsSolutions() {
                     <span>Data Visualization</span>
                     <span>90%</span>
                   </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full w-[90%]"></div>
                   </div>
                 </div>
@@ -166,7 +195,7 @@ export default function AnalyticsSolutions() {
                     <span>Predictive Analytics</span>
                     <span>85%</span>
                   </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full w-[85%]"></div>
                   </div>
                 </div>

@@ -148,7 +148,7 @@ export default function WebDevelopment() {
                     <span>Responsive Web Design</span>
                     <span>94%</span>
                   </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full w-[94%]"></div>
                   </div>
                 </div>
@@ -157,7 +157,7 @@ export default function WebDevelopment() {
                     <span>Custom Web Applications</span>
                     <span>89%</span>
                   </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full w-[89%]"></div>
                   </div>
                 </div>
@@ -166,7 +166,7 @@ export default function WebDevelopment() {
                     <span>eCommerce Development</span>
                     <span>85%</span>
                   </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full w-[85%]"></div>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default function WebDevelopment() {
                     <span>Maintenance & Support</span>
                     <span>80%</span>
                   </div>
-                  <div className="w-100 bg-gray-200 rounded-full h-2">
+                  <div className="w-full bg-gray-200 rounded-full h-2">
                     <div className="bg-blue-600 h-2 rounded-full w-[80%]"></div>
                   </div>
                 </div>

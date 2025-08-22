@@ -46,11 +46,11 @@ const Footer: React.FC = () => {
             Quick Links
           </h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="/" className="hover:text-yellow-300">Home</a></li>
-            <li><a href="/About" className="hover:text-yellow-300">About Us</a></li>
+            <li><a href="/home" className="hover:text-yellow-300">Home</a></li>
+            <li><a href="/about" className="hover:text-yellow-300">About Us</a></li>
             <li><a href="/Carrer" className="hover:text-yellow-300">Carrer</a></li>
             <li><a href="/Refund" className="hover:text-yellow-300">Refund Policy</a></li>
-            <li><a href="/Terms" className="hover:text-yellow-300">Terms & Conditions</a></li>
+            <li><a href="/Term" className="hover:text-yellow-300">Terms & Conditions</a></li>
             <li><a href="/PrivacyPolicy" className="hover:text-yellow-300">Privacy & Policy</a></li>
           </ul>
         </div>
@@ -66,10 +66,12 @@ const Footer: React.FC = () => {
             Services
           </h3>
           <ul className="space-y-2 text-sm">
-            <li><a href="/Service" className="hover:text-yellow-300">Web Development</a></li>
-            <li><a href="/Service" className="hover:text-yellow-300">UI/UX Design</a></li>
-            <li><a href="/Service" className="hover:text-yellow-300">Cloud Solutions</a></li>
-            <li><a href="/Service" className="hover:text-yellow-300">Mobile App Development</a></li>
+            {/* <li><a href="/Web" className="hover:text-yellow-300">Web Development</a></li> */}
+            <li><a href="/Service" className="hover:text-yellow-300">Software Development</a></li>
+            <li><a href="/Analytical" className="hover:text-yellow-300">Analytics Solutions</a></li>
+             <li><a href="/Web" className="hover:text-yellow-300">Web Development</a></li>
+            <li><a href="/It" className="hover:text-yellow-300">IT Solutions</a></li>
+             <li><a href="/Cyber" className="hover:text-yellow-300">Cyber Security</a></li>
           </ul>
         </div>
 
