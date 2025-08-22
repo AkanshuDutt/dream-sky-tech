@@ -1,6 +1,5 @@
 "use client";
 
-// import React from "react";
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 
@@ -10,7 +9,7 @@ const Home = () => {
       <Header />
 
       {/* Video Background Section */}
-      <div className="relative w-full h-screen overflow-hidden">
+      <div className="relative w-full min-h-screen overflow-hidden">
         {/* Background Video */}
         <video
           autoPlay
@@ -24,16 +23,17 @@ const Home = () => {
         </video>
 
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-black/60" />
 
         {/* Overlay Content */}
-        <div className="relative z-10 flex flex-col md:flex-row items-center justify-between h-full px-6 md:px-12">
+        <div className="relative z-10 flex flex-col md:flex-row items-center justify-center md:justify-between min-h-screen px-6 md:px-12 gap-10">
           {/* Left Content */}
-          <div className="text-white max-w-xl mb-10 md:mb-0">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              Welcome to <span className="text-blue-400">Dream Sky Tech</span>
+          <div className="text-white max-w-xl text-center md:text-left">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 leading-snug">
+              Welcome to{" "}
+              <span className="text-blue-400">Dream Sky Tech</span>
             </h1>
-            <p className="text-lg mb-6 text-gray-200">
+            <p className="text-base sm:text-lg mb-6 text-gray-200">
               We provide world-class technology solutions for your business
               growth. Let’s build something amazing together 🚀
             </p>
@@ -43,8 +43,8 @@ const Home = () => {
           </div>
 
           {/* Right Form */}
-          <div className="bg-white p-8 rounded-xl shadow-2xl w-full max-w-md">
-            <h2 className="text-2xl font-bold text-gray-900">
+          <div className="bg-white p-6 sm:p-8 rounded-xl shadow-2xl w-full max-w-md">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900">
               Schedule Your Appointment
             </h2>
             <p className="text-gray-500 text-sm mb-6">
@@ -59,7 +59,8 @@ const Home = () => {
                 onInput={(e) => {
                   e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, "");
                 }}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+                           focus:ring-2 focus:ring-blue-500 outline-none"
                 required
               />
 
@@ -67,7 +68,8 @@ const Home = () => {
               <input
                 type="email"
                 placeholder="E-Mail"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+                           focus:ring-2 focus:ring-blue-500 outline-none"
                 required
               />
 
@@ -81,7 +83,8 @@ const Home = () => {
                 }}
                 pattern="^[0-9]{10}$"
                 title="Please enter a valid 10-digit phone number"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+                           focus:ring-2 focus:ring-blue-500 outline-none"
                 required
               />
 
@@ -89,13 +92,15 @@ const Home = () => {
               <input
                 type="text"
                 placeholder="Your Website"
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 outline-none"
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg 
+                           focus:ring-2 focus:ring-blue-500 outline-none"
               />
 
               {/* Submit Button */}
               <button
                 type="submit"
-                className="w-full py-3 rounded-lg bg-[#000080] text-white font-semibold shadow-md hover:opacity-90 transition"
+                className="w-full py-3 rounded-lg bg-[#000080] text-white font-semibold 
+                           shadow-md hover:opacity-90 transition"
               >
                 Submit Now
               </button>
